@@ -380,8 +380,8 @@ function vPaneDirective ($timeout, $animate, accordionConfig) {
     transclude: true,
     controller: vPaneController,
     scope: {
-      isExpanded: '=?expanded',
-      isDisabled: '=?ngDisabled',
+      isExpanded: '<?expanded',
+      isDisabled: '<?ngDisabled',
       id: '@?'
     },
     link: function (scope, iElement, iAttrs, accordionCtrl, transclude) {
